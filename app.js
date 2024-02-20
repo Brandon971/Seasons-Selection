@@ -181,6 +181,7 @@ function applyParallaxToSeason(seasonId, mouseXPercent, mouseYPercent) {
   const middleground = season.querySelector(".middleground");
   const foreground = season.querySelector(".foreground");
 
+
   // Apply different intensities for each layer using GSAP
   gsapMoveLayer(background, mouseXPercent, mouseYPercent, 0.05);
   gsapMoveLayer(middleground, mouseXPercent, mouseYPercent, 0.1);
@@ -199,5 +200,5 @@ function gsapMoveLayer(layer, mouseXPercent, mouseYPercent, intensity) {
     y: yOffset,
     ease: "none", // Use "none" for a smoother, direct tracking effect
     duration: 0.1 // You can adjust the duration for a more or less responsive effect
-  });~
+  });
 }
